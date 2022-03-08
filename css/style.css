@@ -1,0 +1,628 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+    text-decoration: none;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ol,
+ul {
+    list-style: none;
+}
+del {
+    text-decoration: line-through;
+}
+body {
+    font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #000;
+    overflow-x: hidden;
+    min-width: 320px;
+    font-weight: 500;
+}
+input,
+textarea,
+select {
+    font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+a {
+    color: #000;
+}
+.thumb {
+    display: block;
+}
+.thumb img {
+    display: block;
+    width: 100%;
+}
+p {
+    line-height: 1.6em;
+    font-size: 16px;
+    font-family: "GT-Eesti", Arial;
+    font-weight: 500;
+    color: #000;
+}
+.hidden {
+    display: none;
+}
+br.clear {
+    clear: both;
+    line-height: 0;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.bg {
+    background: #e9e9e949;
+}
+@font-face {
+    font-family: "GT-Eesti";
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"),
+        url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GT-Eesti";
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"),
+        url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GT-Eesti";
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"),
+        url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GT-Eesti";
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"),
+        url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+::placeholder {
+    color: #9b9b9b;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #9b9b9b;
+}
+
+::-ms-input-placeholder {
+    color: #9b9b9b;
+}
+
+/* home section  */
+
+#home {
+    padding: 48px 0 0;
+}
+#home header {
+    align-items: center;
+}
+/* #home header h1.left{} */
+#home header h1.left a {
+    width: 100%;
+    display: block;
+}
+#home header h1.left a img {
+    width: 100%;
+    display: block;
+}
+/* #home header nav.middle{} */
+#home header nav.middle ul {
+    align-items: center;
+}
+#home header nav.middle ul li {
+    margin-right: 24px;
+}
+#home header nav.middle ul li:last-child {
+    margin-right: 0;
+}
+#home header nav.middle ul li a {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+}
+/* #home header nav.right{} */
+#home header nav.right ul {
+    align-items: center;
+}
+#home header nav.right ul li {
+    margin-right: 24px;
+}
+#home header nav.right ul li:last-child {
+    margin-right: 0;
+}
+#home header nav.right ul li a {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    font-size: 16px;
+}
+#home header nav.right ul li a.btn {
+    padding: 12px 24px;
+    border-radius: 10px;
+    background: #ffd9b2a1;
+    color: #ff8560;
+}
+
+/* spotlight section  */
+
+#home #spotlight {
+    padding: 120px 0 50px;
+    background: url("../images/home-hero.svg") no-repeat center center;
+    background-size: 700px;
+    background-position: right -10px top 60px;
+}
+#home #spotlight div.content {
+    width: 40%;
+    margin-left: 74px;
+}
+#home #spotlight div.content h1 {
+    font-family: "GT-Eesti";
+    font-weight: 800;
+    font-size: 54px;
+    margin-bottom: 32px;
+}
+#home #spotlight div.content p {
+    width: 80%;
+    font-family: "GT-Eesti";
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 36px;
+}
+#home #spotlight div.content form {
+    margin-bottom: 24px;
+}
+#home #spotlight div.content form input[type="email"] {
+    padding: 19px 90px 19px 12px;
+    border-radius: 14px;
+    font-size: 15px;
+    border: 1px solid #000;
+}
+#home #spotlight div.content form button[type="submit"] {
+    padding: 20px 18px;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #2e2bff;
+    border: 1px solid #2e2bff;
+    color: #fff;
+    position: relative;
+    left: -36px;
+    /* top: 1px; */
+}
+
+/* creators section  */
+
+#creators {
+    padding: 24px 0;
+    text-align: center;
+    display: block;
+}
+#creators h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+#creators ul {
+    justify-content: space-around;
+    align-items: center;
+}
+#creators ul li {
+    display: block;
+}
+#creators ul li a {
+    display: block;
+    width: 100%;
+}
+#creators ul li a img {
+    display: block;
+    width: 100%;
+}
+
+#content {
+    padding: 60px 0 0;
+}
+#content section.feature {
+    padding: 150px 0;
+}
+/* #content section.feature .wrapper{} */
+/* #content section.feature div.left {} */
+#content section.feature div.left img {
+    display: inline-block;
+}
+
+#content section.feature div.right {
+    margin-left: 100px;
+}
+#content section.feature:first-child div.right {
+    width: 40%;
+    position: relative;
+    left: -235px;
+}
+#content section.feature:nth-child(2) div.right {
+    margin-left: 0;
+    margin-right: 100px;
+}
+/* #content section.feature div.right div.top{} */
+#content section.feature div.right div.top span.icon {
+    display: inline-block;
+    padding: 16px;
+    border-radius: 25px;
+    background: #ffd82a;
+    margin-bottom: 24px;
+}
+#content section.feature div.right div.top span.icon img {
+    display: inline-block;
+    width: 100%;
+}
+
+#content section.feature div.right div.top h3 {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+#content section.feature div.right div.top p {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+#content section.feature div.right div.top a.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #2e2bff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+#content section.feature div.right div.review {
+    padding-top: 24px;
+}
+#content section.feature div.right div.review blockquote {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #a9a9a9;
+}
+#content section.feature div.right div.review span {
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #6b6b6b;
+    display: block;
+    margin-bottom: 24px;
+}
+#content section.feature div.right div.review span small {
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    text-transform: capitalize;
+    color: #a9a9a9;
+}
+#content section.feature div.right div.review img {
+    display: block;
+    height: 25px;
+}
+
+/* reviews section  */
+
+#reviews {
+    padding: 60px 0 80px;
+}
+/* #reviews section.wrapper{} */
+#reviews section.top {
+    width: 50%;
+    margin-bottom: 75px;
+}
+#reviews section.top h3 {
+    font-size: 56px;
+    font-weight: 700;
+}
+/* #reviews section.bottom{}
+#reviews section.bottom ul{} */
+#reviews section.bottom ul li {
+    width: 32%;
+}
+#reviews section.bottom ul li div.top {
+    position: relative;
+    padding: 60px;
+    background: url("../images/review1.jpg") no-repeat;
+    background-size: 400px;
+    border-radius: 10px;
+    height: 330px;
+    margin-bottom: 24px;
+}
+#reviews section.bottom ul li div.top span.play {
+    background: #fff;
+    padding: 11px 16px;
+    border-radius: 50%;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+#reviews section.bottom ul li div.top span.play img {
+    width: 100%;
+}
+#reviews section.bottom ul li div.top div.logo {
+    background: #fff;
+    padding: 10px 50px;
+    border-radius: 15px;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+#reviews section.bottom ul li div.top div.logo img {
+    width: 100%;
+    display: block;
+}
+#reviews section.bottom ul li h4 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* about section   */
+
+#about {
+    padding: 60px 0 100px;
+}
+/* #about section.wrapper{}
+#about ul{} */
+#about ul li {
+    width: 47%;
+}
+#about ul li div.top {
+    width: 100%;
+    height: 465px;
+    background: url("../images/Chase-Kroll-920x760normal-1.png") no-repeat
+        center center;
+    background-size: 564px;
+    margin-bottom: 40px;
+}
+#about ul li:last-child div.top {
+    background: url("../images/Ken-Gibs-920x760normal-1.png") no-repeat center
+        center;
+    background-size: 564px;
+    /* position: relative; */
+}
+#about ul li div.top div.logo {
+    display: block;
+    height: 60px;
+    width: 150px;
+    border-radius: 15px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -386px;
+    left: 21px;
+}
+#about ul li div.top div.logo img {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+}
+/* #about ul li div.bottom{} */
+#about ul li div.bottom blockquote {
+    width: 95%;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+#about ul li div.bottom h6 {
+    font-size: 18px;
+    font-weight: 600;
+    /* margin-bottom: 12px; */
+}
+#about ul li div.bottom span {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #6b6b6b;
+    margin: 5px 0;
+}
+#about ul li div.bottom small {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* feature section  */
+
+#features {
+    padding: 100px 0;
+}
+/* #features section.wrapper{} */
+#features section.top {
+    text-align: center;
+    margin-bottom: 80px;
+}
+#features section.top h3 {
+    font-size: 50px;
+    font-weight: 700;
+    width: 60%;
+    margin: 0 auto;
+}
+/* #features section.content{} */
+#features section.content ul {
+    flex-wrap: wrap;
+}
+#features section.content ul li {
+    width: 32%;
+    padding: 100px 30px;
+    text-align: center;
+}
+#features section.content ul li:nth-child(2),
+#features section.content ul li:nth-child(5) {
+    border-left: 1px dotted #000;
+    border-right: 1px dotted #000;
+}
+#features section.content ul li a {
+    display: block;
+}
+#features section.content ul li a img {
+    display: block;
+    width: 100%;
+    margin-bottom: 24px;
+}
+#features section.content ul li h3 {
+    margin-bottom: 16px;
+}
+#features section.content ul li h3 a {
+    font-size: 32px;
+    font-weight: 700;
+}
+#features section.content ul li p {
+    font-size: 20px;
+    font-weight: 600;
+}
+#features section.bottom {
+    padding: 40px 0;
+}
+#features section.bottom section.content {
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px;
+    background: #c6dfff;
+    border-radius: 10px;
+    position: relative;
+}
+#features section.bottom section.content span.icon {
+    background: #fff;
+    padding: 24px;
+    border-radius: 50%;
+    position: absolute;
+    left: 67px;
+    top: -36px;
+    box-shadow: -1px 1px 65px -18px rgba(0, 0, 0, 0.78);
+}
+#features section.bottom section.content span.icon img {
+    display: block;
+    width: 100%;
+}
+#features section.bottom section.content div.element {
+    align-items: center;
+}
+#features section.bottom section.content div.element p {
+    width: 70%;
+    font-size: 20px;
+    font-weight: 600;
+}
+#features section.bottom section.content div.element a.btn {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 21px 33px;
+    background: #2e2bff;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* products section  */
+
+#products {
+    padding: 60px 0 40px;
+}
+/* #products section.wrapper{} */
+#products section.top {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+#products section.top h3 {
+    font-size: 49px;
+    font-weight: 700;
+}
+#products ul {
+    margin-bottom: 200px;
+}
+#products ul li {
+    width: 32%;
+    height: 706px;
+    padding: 32px 16px;
+    background: #c6dfff;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+}
+/* #products ul li.one{} */
+#products ul li.two {
+    background: #fff4d7;
+}
+#products ul li.three {
+    background: #ffc9b7b8;
+}
+#products ul li div.logo {
+    display: inline-block;
+    padding: 24px;
+    background: #fff;
+    border-radius: 25px;
+    margin-bottom: 32px;
+}
+#products ul li div.logo img {
+    display: block;
+    width: 35px;
+}
+#products ul li h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+#products ul li p {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+#products ul li a.btn {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 12px 24px;
+    color: #fff;
+    background: #2e2bff;
+    border-radius: 15px;
+    margin-bottom: 24px;
+}
+#products ul li img.hero {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 9px;
+    top: 423px;
+}
+#products ul li.three a.btn {
+    background: #ff784b;
+}
+#products ul li.two a.btn {
+    background: #fcdc50;
+}
