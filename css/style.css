@@ -218,6 +218,11 @@ br.clear {
     left: -36px;
     /* top: 1px; */
 }
+#home #spotlight div.content form button[type="submit"]:last-child {
+    padding:20px 25px;
+    border-radius:50%;
+    display: none;
+}
 
 /* creators section  */
 
@@ -969,96 +974,97 @@ footer section.bottom div.bottom ul li a {
         width: 55%;
         margin-left: 50px;
     }
-    #contact-us div.left div.testimonials{
+    #contact-us div.left div.testimonials {
         width: 90%;
     }
-    #contact-us div.right{
+    #contact-us div.right {
         padding: 45px;
     }
-    #contact-us div.right form div.one-by-two input{
+    #contact-us div.right form div.one-by-two input {
         padding: 15px;
     }
-    #contact-us div.right form div.one-by-two select{
+    #contact-us div.right form div.one-by-two select {
         padding: 15px;
     }
-    #contact-us div.left div.testimonials ul.people{
+    #contact-us div.left div.testimonials ul.people {
         width: 70%;
     }
-    #contact-us div.left div.companies ul{
+    #contact-us div.left div.companies ul {
         width: 85%;
     }
-    footer section.top div.item.large div.social ul li img{
+    footer section.top div.item.large div.social ul li img {
         width: 20px;
     }
-    footer section.top div.item.large div.social ul li{
+    footer section.top div.item.large div.social ul li {
         padding: 12px;
     }
 }
 @media all and (max-width: 980px) {
-    #home #spotlight{
+    #home #spotlight {
         background: none;
     }
-    #home #spotlight div.content{
+    #home #spotlight div.content {
         width: 90%;
         margin-left: 50px;
     }
-    #content section.feature{
+    #content section.feature {
         padding: 100px 0;
         flex-wrap: wrap;
     }
     #content section.feature div.left,
     #content section.feature:first-child div.right,
     #content section.feature:nth-child(2) div.right,
-    #content section.feature:last-child div.right{
+    #content section.feature:last-child div.right {
         width: 100%;
     }
-    #content section.feature:first-child div.right{
+    #content section.feature:first-child div.right {
         padding: 32px;
     }
-    #content section.feature div.right{
+    #content section.feature div.right {
         width: 100%;
         margin: 0;
     }
-    #content section.feature.bg section.wrapper{
+    #content section.feature.bg section.wrapper {
         flex-wrap: wrap-reverse;
     }
-    #content section.feature section.wrapper{
+    #content section.feature section.wrapper {
         flex-wrap: wrap;
     }
-    #reviews section.top{
+    #reviews section.top {
         width: 100%;
     }
-    #reviews section.bottom ul{
+    #reviews section.bottom ul {
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    #reviews section.bottom ul li{
+    #reviews section.bottom ul li {
         width: 47%;
         margin-bottom: 40px;
     }
-    #reviews section.bottom ul li:last-child{
+    #reviews section.bottom ul li:last-child {
         margin-bottom: 0;
     }
-    #about ul li div.bottom blockquote{
+    #about ul li div.bottom blockquote {
         font-size: 20px;
     }
-    #features section.top h3{
+    #features section.top h3 {
         width: 100%;
     }
     #features section.content ul li:nth-child(2),
-    #features section.content ul li:nth-child(5){
-        border: 0 none;
+    #features section.content ul li:nth-child(5) {
+        border-left: none;
+        border-right: none;
     }
-    #features section.content ul li{
+    #features section.content ul li {
         width: 48%;
     }
-    #features section.content ul li:nth-child(odd){
+    #features section.content ul li:nth-child(odd) {
         border-right: 1px dotted #000;
     }
-    #features section.bottom section.content{
+    #features section.bottom section.content {
         width: 100%;
     }
-    #products section.top{
+    #products section.top {
         width: 100%;
     }
     #products ul {
@@ -1066,45 +1072,45 @@ footer section.bottom div.bottom ul li a {
         justify-content: space-around;
         margin-bottom: 0;
     }
-    #products ul li{
+    #products ul li {
         width: 47%;
         margin-bottom: 100px;
     }
-    #products ul li:last-child{
+    #products ul li:last-child {
         margin-bottom: 0;
     }
-    #products ul li p{
+    #products ul li p {
         width: 100%;
     }
-    #products ul li img.hero{
+    #products ul li img.hero {
         top: 410px;
     }
-    #blog section.top{
+    #blog section.top {
         width: 100%;
     }
-    #blog section.top h3{
+    #blog section.top h3 {
         font-size: 48px;
     }
-    #blog ul li h2{
+    #blog ul li h2 {
         font-size: 20px;
     }
-    #contact-us section.wrapper{
+    #contact-us section.wrapper {
         flex-wrap: wrap;
     }
     #contact-us div.right,
-    #contact-us div.left{
+    #contact-us div.left {
         width: 100%;
     }
-    #contact-us div.left{
+    #contact-us div.left {
         margin-bottom: 40px;
     }
-    footer section.top{
+    footer section.top {
         flex-wrap: wrap;
     }
-    footer section.top div.item.large{
+    footer section.top div.item.large {
         width: 100%;
     }
-    footer section.top div.item.large div.social{
+    footer section.top div.item.large div.social {
         width: 50%;
         margin-bottom: 32px;
     }
@@ -1112,12 +1118,231 @@ footer section.bottom div.bottom ul li a {
     /* finished  */
 }
 @media all and (max-width: 768px) {
+    #creators ul {
+        flex-wrap: wrap;
+    }
+    #creators ul li {
+        margin-right: 32px;
+    }
+    #about ul {
+        flex-wrap: wrap;
+    }
+    #about ul li {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    #about ul li:last-child {
+        margin-bottom: 0;
+    }
+    #features {
+        padding: 0;
+    }
+    #features section.bottom section.content div.element {
+        flex-wrap: wrap;
+    }
+    #features section.bottom section.content div.element p {
+        width: 100%;
+        margin-bottom: 32px;
+    }
 }
 @media all and (max-width: 640px) {
+    #home #spotlight div.content {
+        margin: 0 auto;
+    }
+    #home #spotlight div.content form input[type="email"] {
+        padding: 19px 70px 19px 12px;
+    }
+    #creators ul li {
+        margin-bottom: 24px;
+    }
+    #content section.feature {
+        padding: 50px;
+    }
+    #content section.feature {
+        padding: 0;
+    }
+    #content section.feature:first-child div.right {
+        padding: 0;
+    }
+    #content section.feature:nth-child(2) div.right {
+        margin: 0;
+    }
+    #reviews section.top h3 {
+        font-size: 46px;
+    }
+    #reviews section.bottom ul li div.top {
+        background: url("../images/review1.jpg") no-repeat center center;
+        background-size: 445px;
+    }
+    #reviews section.bottom ul li {
+        width: 100%;
+    }
+    #features section.content ul li:nth-child(odd) {
+        border-right: none;
+    }
+    #features section.content ul li {
+        width: 100%;
+        border-bottom: 1px dotted #000;
+        padding: 55px 30px;
+    }
+    #features section.content ul li:last-child {
+        border-bottom: none;
+    }
+    #products section.top h3 {
+        font-size: 40px;
+    }
+    #products ul li {
+        width: 100%;
+        margin-bottom: 200px;
+    }
+    #blog section.top h3 {
+        font-size: 40px;
+    }
+    #blog ul {
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+    }
+    #blog ul li {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    #contact-us div.right form div.one-by-two input,
+    #contact-us div.right form div.one-by-two select {
+        padding: 10px;
+    }
+    #contact-us div.right form div.full input[type="submit"] {
+        padding: 15px 0;
+    }
+    footer section.top {
+        flex-direction: column;
+    }
+    footer section.top div.item.large div.social {
+        width: 100%;
+    }
+    footer section.top div.item {
+        margin-bottom: 32px;
+    }
 }
 @media all and (max-width: 480px) {
+    #home header nav.right ul {
+        display: none;
+    }
+    #home header {
+        justify-content: center;
+    }
+    #home #spotlight {
+        padding-bottom: 100px;
+    }
+    #home #spotlight div.content {
+        width: 100%;
+    }
+    #home #spotlight div.content h1 {
+        font-size: 40px;
+    }
+    #home #spotlight div.content p {
+        width: 100%;
+        font-size: 16px;
+    }
+    #home #spotlight div.content form input[type="email"] {
+        padding: 10px 18px 8px 8px;
+    }
+    #home #spotlight div.content form button[type="submit"] {
+        padding: 10.5px 15px;
+        top: -1px;
+    }
+    #creators ul li {
+        margin: 0 24px 12px 0;
+    }
+    #features section.top {
+        margin-bottom: 0;
+    }
+    #products section.top {
+        margin-bottom: 50px;
+    }
+    #features section.top h3 {
+        font-size: 32px;
+    }
+    #products section.top h3 {
+        font-size: 32px;
+    }
+    #products ul li {
+        margin-bottom: 100px;
+    }
+    #blog section.top h3 {
+        font-size: 32px;
+    }
+    #blog div.wrapper a.btn {
+        padding: 19px 29px;
+    }
+    #contact-us {
+        padding: 52px 0;
+    }
+    #contact-us div.left > h3 {
+        width: 100%;
+    }
+    #contact-us div.left div.testimonials ul.people {
+        width: 100%;
+    }
+    #contact-us div.left div.companies ul {
+        flex-wrap: wrap;
+        margin-top: 0;
+        width: 100%;
+        justify-content: space-around;
+    }
+    #contact-us div.left div.companies ul li {
+        margin-right: 12px;
+    }
+    #contact-us div.right {
+        padding: 45px 30px;
+    }
+    #contact-us div.right section.inputs {
+        grid-template-columns: 100%;
+    }
+    #contact-us div.right form div.full p {
+        font-size: 14px;
+    }
+    #contact-us div.right form div.full input[type="checkbox"] {
+        margin: 11px;
+        margin-top: 5px;
+        transform: scale(1.5);
+    }
+    #contact-us div.right form div.full input[type="submit"]{
+        padding: 13px 0;
+    }
+    #home #spotlight div.content form input[type="email"]{
+        padding: 19px 90px 19px 12px;
+    }
+    #home #spotlight div.content form button[type="submit"] {
+        display: none;
+    }
+    #home #spotlight div.content form button[type="submit"]:last-child {
+        display: inline-block;
+        left: -51px;
+        top: 0;
+    }
 }
 @media all and (max-width: 360px) {
+    #home #spotlight div.content form input[type="email"]{
+        padding: 13px 28px 13px 12px;
+    }
+    #content section.feature div.right div.top h3{
+        font-size: 32px;
+    }
+    #content section.feature div.right div.top p{
+        font-size: 18px;
+    }
+    #content section.feature div.right div.top a.btn{
+        font-size: 17px;
+    }
+    #content section.feature div.right div.review blockquote{
+        font-size: 16px;
+    }
+    #content section.feature div.right div.review span small{
+        font-size: 19px;
+    }
+    #content section.feature{
+        padding: 32px 0;
+        border-bottom: 1px solid #000;
+    }
 }
-@media all and (max-width: 320px) {
-}
+/* @media all and (max-width: 320px) {} */
